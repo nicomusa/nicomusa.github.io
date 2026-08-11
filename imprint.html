@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Sicherheit: Content-Security-Policy + Referrer -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; base-uri 'self'; form-action 'self'; object-src 'none'">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+
+    <!-- Theme + Interaktion (extern, kein Inline-JS) -->
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,0..200" />
+    <title>Impressum – Nico Sebastian Musa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Theme Toggle (floating, outside content container) -->
+    <button id="themeToggle" class="theme-float-btn" aria-label="Farbschema wechseln" title="Farbschema wechseln">
+        <span class="material-symbols-outlined">light_mode</span>
+    </button>
+
+    <!-- Mobile Nav (hidden on desktop) -->
+    <div id="mobileNav">
+        <div id="mobileNavWrapper">
+            <nav class="main-nav mobile-nav">
+                <ul>
+                    <li><a href="index.html#kontakt">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div id="mobileMenuLink">
+        <button id="mobileMenuBtn" aria-label="Menü öffnen/schließen" aria-expanded="false">
+            <span class="material-symbols-outlined menu-icon">menu</span>
+            <span class="menu-text">Menü</span>
+        </button>
+    </div>
+
+    <div id="canvas">
+
+        <!-- Header / Navigation -->
+        <header id="header">
+            <div id="logo">
+                <div class="logo"><a href="index.html">Nico Sebastian Musa, M.Sc.</a></div>
+            </div>
+            <div class="header-right">
+                <div id="topNav">
+                    <nav class="main-nav">
+                        <ul>
+                            <li class="page-collection"><a href="index.html#kontakt">Kontakt</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <div class="page-divider"></div>
+
+        <!-- Legal Content -->
+        <div class="legal-content">
+            <h1>Impressum</h1>
+
+            <p class="meta">Stand: 21.06.2026</p>
+
+            <h2>Angaben zur Person</h2>
+            <p>
+                Diese Website ist ein rein privates, nicht geschäftsmäßiges Angebot. Die
+                Impressumspflicht für geschäftsmäßige Telemedien (§ 5 DDG) greift hierfür
+                nicht; die folgenden Angaben erfolgen freiwillig.
+            </p>
+            <p>
+                Nico Sebastian Musa<br>
+                E-Mail: nico.s.musa[at]web.de
+            </p>
+
+            <h2>Haftungsausschluss</h2>
+            <h3>Haftung für Inhalte</h3>
+            <p>
+                Die Inhalte dieser Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte kann ich jedoch keine Gewähr übernehmen. Als Diensteanbieter bin ich gemäß § 7 Abs. 1 DDG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 DDG bin ich als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.
+            </p>
+
+            <h3>Haftung für Links</h3>
+            <p>
+                Dieses Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte ich keinen Einfluss habe. Deshalb kann ich für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.
+            </p>
+
+            <h3>Urheberrecht</h3>
+            <p>
+                Die von mir erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.
+            </p>
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="footer-content">
+                <p class="copyright">© 2026 Nico Sebastian Musa – alle Rechte vorbehalten</p>
+                <div class="footer-links">
+                    <a href="imprint.html">Impressum</a>
+                    <span class="separator">|</span>
+                    <a href="privacy.html">Datenschutz</a>
+                </div>
+                <p class="footer-made">Made with ♥</p>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+</html>

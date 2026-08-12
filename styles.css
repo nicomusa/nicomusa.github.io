@@ -950,10 +950,15 @@ em {
         gap: 20px;
     }
 
-    /* Trenner zwischen gestapelten Spalten sichtbar machen */
+    /* Trenner zwischen gestapelten Spalten sichtbar machen;
+       Abstand an den mobilen Sektions-Rhythmus angepasst (20px Padding + 16px = 36px) */
     .section-divider--mobile {
         display: block;
-        margin: 0.5em 0;
+        margin: 2.25em 0;
+    }
+
+    .section-divider--spacious {
+        margin: 2.25em 0;
     }
 
     /* Profilbild: mobil über Werdegang (unter dem Namen), nicht in der Spalte */
@@ -1040,6 +1045,12 @@ em {
 
     .section-block {
         padding: 14px 0;
+    }
+
+    /* Spalten-Trenner: Abstand an kleinsten Rhythmus angepasst (14px Padding + 16px = 30px) */
+    .section-divider--spacious,
+    .section-divider--mobile {
+        margin: 1.875em 0;
     }
 
     #mobileMenuBtn {

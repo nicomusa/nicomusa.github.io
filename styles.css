@@ -950,13 +950,13 @@ em {
         gap: 20px;
     }
 
-    /* Trenner zwischen gestapelten Spalten sichtbar machen;
-       Abstand an den mobilen Sektions-Rhythmus angepasst (20px Padding + 16px = 36px) */
+    /* Spalten-Trenner (Werdegang|Fachgebiete): kleiner innerer Trenner */
     .section-divider--mobile {
         display: block;
-        margin: 2.25em 0;
+        margin: 0.5em 0;
     }
 
+    /* Sektions-Trenner über Kompetenzen: voller Rhythmus (20px Padding + 16px = 36px) */
     .section-divider--spacious {
         margin: 2.25em 0;
     }
@@ -1047,10 +1047,13 @@ em {
         padding: 14px 0;
     }
 
-    /* Spalten-Trenner: Abstand an kleinsten Rhythmus angepasst (14px Padding + 16px = 30px) */
-    .section-divider--spacious,
-    .section-divider--mobile {
+    /* Sektions-Trenner über Kompetenzen: kleinster Rhythmus (14px Padding + 16px = 30px) */
+    .section-divider--spacious {
         margin: 1.875em 0;
+    }
+
+    .section-divider--mobile {
+        margin: 0.5em 0;
     }
 
     #mobileMenuBtn {

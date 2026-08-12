@@ -489,6 +489,11 @@ em {
     transition: color var(--transition-speed) ease;
 }
 
+/* Kompetenzen ist eine eigene Sektion: Abstand wie zwischen Hauptsektionen (33px) */
+#kompetenzen {
+    margin-top: 1.3em;
+}
+
 .subsection-heading {
     font-family: 'Jost', 'Futura PT', 'Futura', 'Century Gothic', sans-serif;
     font-weight: 400;
@@ -685,6 +690,11 @@ em {
     margin: 0 auto 1.5em;
     box-shadow: 0 2px 10px var(--shadow-light);
     transition: box-shadow var(--transition-speed) ease;
+}
+
+/* Zentriert über der Sektion: Abstand unten = Abstand oben (60px) */
+.profile-img-desktop {
+    margin-bottom: 60px;
 }
 
 /* Profilbild mobil: nur die obere Variante zeigen (unter dem Namen) */

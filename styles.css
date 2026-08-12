@@ -523,6 +523,11 @@ em {
     margin: 2.875em 0;
 }
 
+/* Trenner zwischen den Spalten — nur in der gestapelten Mobilansicht sichtbar */
+.section-divider--mobile {
+    display: none;
+}
+
 /* ============================================
    HERO
    ============================================ */
@@ -936,6 +941,12 @@ em {
     .sqs-row {
         flex-direction: column;
         gap: 20px;
+    }
+
+    /* Trenner zwischen gestapelten Spalten sichtbar machen */
+    .section-divider--mobile {
+        display: block;
+        margin: 0.5em 0;
     }
 
     /* Profilbild: mobil über Werdegang (unter dem Namen), nicht in der Spalte */

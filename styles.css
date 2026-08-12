@@ -489,11 +489,6 @@ em {
     transition: color var(--transition-speed) ease;
 }
 
-/* Kompetenzen ist eine eigene Sektion: Abstand wie zwischen Hauptsektionen (33px) */
-#kompetenzen {
-    margin-top: 1.3em;
-}
-
 .subsection-heading {
     font-family: 'Jost', 'Futura PT', 'Futura', 'Century Gothic', sans-serif;
     font-weight: 400;
@@ -521,6 +516,11 @@ em {
     margin: 1em 0;
     padding: 0;
     transition: border-color var(--transition-speed) ease;
+}
+
+/* Trenner innerhalb einer Spalte: gleiche Luft wie die Hauptsektions-Trenner (46px) */
+.section-divider--spacious {
+    margin: 2.875em 0;
 }
 
 /* ============================================

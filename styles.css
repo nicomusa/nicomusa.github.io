@@ -675,6 +675,13 @@ em {
     color: var(--text);
 }
 
+/* Einheitliche Sektionsabstände: letztes Element einer Sektion ohne unteren Abstand,
+   damit vor jedem Trenner exakt 46px Luft sind (wie überall) */
+.academic-list:last-child,
+.tags-cloud:last-child {
+    margin-bottom: 0;
+}
+
 .academic-detail {
     display: block;
     font-size: 0.95em;

@@ -742,15 +742,6 @@ em {
     color: var(--tag-text-hover);
 }
 
-/* Links in Tags: unauffällig (Farbe des Tags erben, keine Unterstreichung) */
-.tag a {
-    color: inherit;
-    text-decoration: none;
-}
-.tag a:hover {
-    color: var(--tag-text-hover);
-}
-
 /* ============================================
    PUBLICATIONS LIST
    ============================================ */
